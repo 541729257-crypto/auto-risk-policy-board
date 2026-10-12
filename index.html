@@ -6,7 +6,7 @@
 <body>
 <main><section class="intro"><div><p class="eyebrow">RISK POLICY DASHBOARD</p><h1>风险政策一页纸</h1><p class="subtitle">快速定位适用政策，清晰查阅业务要求。</p></div><div class="source">数据来源<span>风险政策总表 · 2026.09.29</span></div></section>
 <section class="filters" aria-label="政策筛选"><div class="section-label"><span>筛选政策</span><button id="reset">重置筛选 ↺</button></div><div id="filters" class="filter-grid"></div><div id="selection" class="selection">选择筛选条件以缩小查询范围</div></section>
-<section class="workspace"><aside><div class="list-heading"><h2>匹配结果</h2><span id="count" aria-live="polite"></span></div><p class="hint">选择记录查看完整要求</p><div id="results"></div></aside><article id="detail" aria-live="polite"></article></section>
+<section class="workspace"><aside><div class="list-heading"><h2>匹配结果</h2><span id="count" aria-live="polite"></span></div><p class="hint">选择政策查看完整要求</p><div id="results"></div></aside><article id="detail" aria-live="polite"></article></section>
 <footer>来源：风险政策一页纸数据源20260929.xlsx<span>按原始表格展示 · 空白单元格显示为「未填写」</span></footer></main><script>const filterKeys=['适用品牌','金融类型','业务场景'];
 let records=[],selected=null;const state=Object.fromEntries(filterKeys.map(k=>[k,'']));
 const escapeHTML=v=>String(v??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
